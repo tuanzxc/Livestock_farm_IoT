@@ -93,8 +93,9 @@ B4: Deploy
 
 ## Video Demo
 
-https://youtu.be/gljpb4TCUY8?si=1LuEsQNhKYvjf9dE
-https://drive.google.com/file/d/1I3LE9Mj58j8BERSbEoG4K8dJx891p0RY/view?usp=sharing
+Youtube: [Link](https://youtu.be/gljpb4TCUY8?si=1LuEsQNhKYvjf9dE)
+
+Google drive: [Link](https://drive.google.com/file/d/1I3LE9Mj58j8BERSbEoG4K8dJx891p0RY/view?usp=sharing)
 
 ## Kết quả
 
