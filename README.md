@@ -94,4 +94,11 @@ B4: Deploy
 ## Video Demo
 
 https://youtu.be/gljpb4TCUY8?si=1LuEsQNhKYvjf9dE
+https://drive.google.com/file/d/1I3LE9Mj58j8BERSbEoG4K8dJx891p0RY/view?usp=sharing
+
+## Kết quả
+
+Hệ thống chạy ổn định, các thiết bị hoạt động tương đối tốt, đáng tin cậy, đặc biệt là việc bật tắt, báo cháy, 2 chế độ tự động tự chỉnh nhiệt độ và chữa cháy.
+
+Tuy nhiên, 2 băng chuyền của hệ thống sử dụng vật liệu chưa phù hợp, khiến việc di chuyển khó khăn. Việc đóng gói hệ thống cũng chưa hoàn thiện nên chiếm nhiều không gian.
 
