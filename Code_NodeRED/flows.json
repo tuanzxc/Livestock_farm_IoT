@@ -1,0 +1,2618 @@
+[
+    {
+        "id": "eb96b86d53777532",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c75e66158429beac",
+        "type": "ui_tab",
+        "name": "Nhiệt độ",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5b7daca09568497c",
+        "type": "ui_tab",
+        "name": "Trang trại thông minh",
+        "icon": "fa-fire",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3bd41884debabf21",
+        "type": "ui_tab",
+        "name": "Ăn uống",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "57c56a032d2b8eab",
+        "type": "ui_tab",
+        "name": "Chữa cháy",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "313d25d81209ef7f",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-email": "5.0.2"
+        }
+    },
+    {
+        "id": "9ccf6f36b92ad744",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "c75e66158429beac",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "81b26dfa37b2cd40",
+        "type": "ui_group",
+        "name": "LED",
+        "tab": "5b7daca09568497c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9f4d7b3b4cf102ba",
+        "type": "ui_group",
+        "name": "Quạt",
+        "tab": "c75e66158429beac",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e99ed669feb471c6",
+        "type": "ui_group",
+        "name": "Đèn sưởi",
+        "tab": "c75e66158429beac",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0a31a4c804325477",
+        "type": "ui_group",
+        "name": "Băng chuyền thức ăn",
+        "tab": "3bd41884debabf21",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cba5b20c6f16e596",
+        "type": "ui_group",
+        "name": "Máy bơm nước uống",
+        "tab": "3bd41884debabf21",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a49bdd6464a717b",
+        "type": "ui_group",
+        "name": "Chữa cháy",
+        "tab": "57c56a032d2b8eab",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fb44b7bf9eea8287",
+        "type": "ui_group",
+        "name": "Tự động điều chỉnh nhiệt độ",
+        "tab": "c75e66158429beac",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f173cc7219736ace",
+        "type": "ui_group",
+        "name": "Tự động chữa cháy",
+        "tab": "57c56a032d2b8eab",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e849f340ec94a486",
+        "type": "ui_group",
+        "name": "Hẹn giờ",
+        "tab": "3bd41884debabf21",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef73408892d700e7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ab6fbb4a539e8e5c",
+        "type": "ui_gauge",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "group": "9ccf6f36b92ad744",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature (°C)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "22bdfc918e7f4585",
+        "type": "ui_chart",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "group": "9ccf6f36b92ad744",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 490,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18d92cee5527a763",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "Có cháy không",
+        "topic": "esp32/firess",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1840,
+        "wires": [
+            [
+                "04332b61d996d1dd",
+                "eb3766a9d45171de"
+            ]
+        ]
+    },
+    {
+        "id": "b1b1946775b8d5d0",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/LED_brightness",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 840,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8ffd25531bdb88e2",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "temp",
+        "topic": "esp32/temperature",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "ab6fbb4a539e8e5c",
+                "22bdfc918e7f4585"
+            ]
+        ]
+    },
+    {
+        "id": "fb2f22069789ebc6",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Công tắc đèn",
+        "tooltip": "",
+        "group": "81b26dfa37b2cd40",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "b1b1946775b8d5d0"
+            ]
+        ]
+    },
+    {
+        "id": "b481ffdb2441a811",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "81b26dfa37b2cd40",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trạng thái đèn",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 820,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "19810ad73fc716ef",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/LED_brightness",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 160,
+        "wires": [
+            [
+                "a1befc9627740ccd",
+                "80ba7951a45d5648"
+            ]
+        ]
+    },
+    {
+        "id": "fbab6a64df0c330a",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay14",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 440,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "4fa0ec2e2354beab",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Công tắc quạt",
+        "tooltip": "",
+        "group": "9f4d7b3b4cf102ba",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 760,
+        "wires": [
+            [
+                "fbab6a64df0c330a",
+                "930e5c66634f4e53"
+            ]
+        ]
+    },
+    {
+        "id": "1ac6cb9a168b2067",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "9f4d7b3b4cf102ba",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trạng thái quạt",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 740,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "a64f6d1d142d2ff0",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay14",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 860,
+        "wires": [
+            [
+                "9d45d1b2c12c9491",
+                "e1c21843b8b0eb7b"
+            ]
+        ]
+    },
+    {
+        "id": "a3d6657217dcd0de",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/heater",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 430,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "3876b751311df3b0",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Công tắc đèn sưởi",
+        "tooltip": "",
+        "group": "e99ed669feb471c6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 210,
+        "y": 940,
+        "wires": [
+            [
+                "a3d6657217dcd0de",
+                "fdb774719f21877a"
+            ]
+        ]
+    },
+    {
+        "id": "f9c97b12b2643f8b",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "e99ed669feb471c6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trạng thái đèn sưởi",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "9606f011f8837f43",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/heater",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 1040,
+        "wires": [
+            [
+                "75a26e6643371d0b",
+                "9ef3e9bc82874c3d"
+            ]
+        ]
+    },
+    {
+        "id": "3a7f64c39f890818",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay26",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 460,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "bceb79b7798d60f2",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Công tắc băng chuyền",
+        "tooltip": "",
+        "group": "0a31a4c804325477",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 240,
+        "y": 1400,
+        "wires": [
+            [
+                "3a7f64c39f890818"
+            ]
+        ]
+    },
+    {
+        "id": "cb1833a3c84cf668",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "0a31a4c804325477",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trạng thái băng chuyền",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 790,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "1a2099dc3b4bab2e",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay26",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 1480,
+        "wires": [
+            [
+                "6a5bb4b630754a46",
+                "e0578e67d384df84"
+            ]
+        ]
+    },
+    {
+        "id": "be06a3a85c920a72",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay27",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 460,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "f780e003aad1c5f8",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Công tắc máy bơm",
+        "tooltip": "",
+        "group": "cba5b20c6f16e596",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 230,
+        "y": 1580,
+        "wires": [
+            [
+                "be06a3a85c920a72"
+            ]
+        ]
+    },
+    {
+        "id": "2caa0121da6fb64e",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "cba5b20c6f16e596",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trạng thái máy bơm",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 780,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "53f3c366547c6d1f",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay27",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 1660,
+        "wires": [
+            [
+                "89c72f301f61e93e",
+                "53378bded4d1b553"
+            ]
+        ]
+    },
+    {
+        "id": "e145904d4de282d1",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay25",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 460,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "06d9963581f641c1",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Chữa cháy bắt buộc",
+        "tooltip": "",
+        "group": "1a49bdd6464a717b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 240,
+        "y": 2080,
+        "wires": [
+            [
+                "e145904d4de282d1",
+                "09e35bc8cb4c31f2"
+            ]
+        ]
+    },
+    {
+        "id": "17fd7a46566191e8",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/relay25",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 2240,
+        "wires": [
+            [
+                "a6499b921058d17d",
+                "4463162c0bb0e96d"
+            ]
+        ]
+    },
+    {
+        "id": "7b233f5d7ab4496a",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/autofan",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 740,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "569567130467864b",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Tự động(1)/Thủ công(0)",
+        "tooltip": "",
+        "group": "fb44b7bf9eea8287",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 230,
+        "y": 440,
+        "wires": [
+            [
+                "7b233f5d7ab4496a"
+            ]
+        ]
+    },
+    {
+        "id": "09bcd0b852a98dd2",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "fb44b7bf9eea8287",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Có tự động không",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "bbb2662bea12b01c",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/autofan",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "815840ea4dc59d80",
+                "d6c82378d9188b4b"
+            ]
+        ]
+    },
+    {
+        "id": "d8b7eeb7560b3a8e",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/tempmax",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 440,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "c8c6256f68045372",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/tempmin",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 440,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "4e147379df5a07ec",
+        "type": "ui_slider",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Nhiệt độ cao nhất",
+        "tooltip": "",
+        "group": "fb44b7bf9eea8287",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 210,
+        "y": 600,
+        "wires": [
+            [
+                "d8b7eeb7560b3a8e"
+            ]
+        ]
+    },
+    {
+        "id": "66e133806c28cce9",
+        "type": "ui_slider",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Nhiệt độ thấp nhất",
+        "tooltip": "",
+        "group": "fb44b7bf9eea8287",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 210,
+        "y": 660,
+        "wires": [
+            [
+                "c8c6256f68045372"
+            ]
+        ]
+    },
+    {
+        "id": "737f4c9b10b2bce8",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/autofire",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 500,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "4cbdbd21dd7d6984",
+        "type": "ui_switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Tự động(1)/Thủ công(0)",
+        "tooltip": "",
+        "group": "f173cc7219736ace",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 250,
+        "y": 2380,
+        "wires": [
+            [
+                "737f4c9b10b2bce8"
+            ]
+        ]
+    },
+    {
+        "id": "998b083223eb4f50",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "f173cc7219736ace",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Có tự động không",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "39778ead25599480",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/autofire",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 2460,
+        "wires": [
+            [
+                "0d048abb8ead1ccc",
+                "aa003e7ec80aae3b"
+            ]
+        ]
+    },
+    {
+        "id": "04332b61d996d1dd",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 1900,
+        "wires": [
+            [
+                "327f8a5fe35b353a",
+                "f24e6abbd9b63af5",
+                "4c10e4c2238a2b26"
+            ]
+        ]
+    },
+    {
+        "id": "327f8a5fe35b353a",
+        "type": "ui_toast",
+        "z": "eb96b86d53777532",
+        "position": "top right",
+        "displayTime": "1",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "CÓ CHÁY",
+        "name": "Có cháy",
+        "x": 600,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "d4738c6921d7a6d2",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "1a49bdd6464a717b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Có cháy không?",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 780,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "a1befc9627740ccd",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "bdc0f8d3a93e28fe"
+            ]
+        ]
+    },
+    {
+        "id": "80ba7951a45d5648",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "81c25565215e2002"
+            ]
+        ]
+    },
+    {
+        "id": "bdc0f8d3a93e28fe",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 1",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 120,
+        "wires": [
+            [
+                "b481ffdb2441a811"
+            ]
+        ]
+    },
+    {
+        "id": "81c25565215e2002",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 2",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 180,
+        "wires": [
+            [
+                "b481ffdb2441a811"
+            ]
+        ]
+    },
+    {
+        "id": "f24e6abbd9b63af5",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 3",
+        "func": "msg.payload = \"CÓ CHÁY\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1900,
+        "wires": [
+            [
+                "d4738c6921d7a6d2"
+            ]
+        ]
+    },
+    {
+        "id": "eb3766a9d45171de",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 1840,
+        "wires": [
+            [
+                "07d0ce2e36fc0857"
+            ]
+        ]
+    },
+    {
+        "id": "07d0ce2e36fc0857",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 4",
+        "func": "msg.payload = \"AN TOÀN\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1840,
+        "wires": [
+            [
+                "d4738c6921d7a6d2"
+            ]
+        ]
+    },
+    {
+        "id": "9d45d1b2c12c9491",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 840,
+        "wires": [
+            [
+                "dd15c99d5f41fa09"
+            ]
+        ]
+    },
+    {
+        "id": "e1c21843b8b0eb7b",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 880,
+        "wires": [
+            [
+                "2a1c784e4777db3b"
+            ]
+        ]
+    },
+    {
+        "id": "dd15c99d5f41fa09",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 5",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 840,
+        "wires": [
+            [
+                "1ac6cb9a168b2067"
+            ]
+        ]
+    },
+    {
+        "id": "2a1c784e4777db3b",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 6",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 880,
+        "wires": [
+            [
+                "1ac6cb9a168b2067"
+            ]
+        ]
+    },
+    {
+        "id": "75a26e6643371d0b",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 1020,
+        "wires": [
+            [
+                "5c46309f8c18eaca"
+            ]
+        ]
+    },
+    {
+        "id": "9ef3e9bc82874c3d",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 1080,
+        "wires": [
+            [
+                "c1a41ae172b488a3"
+            ]
+        ]
+    },
+    {
+        "id": "5c46309f8c18eaca",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 7",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1020,
+        "wires": [
+            [
+                "f9c97b12b2643f8b"
+            ]
+        ]
+    },
+    {
+        "id": "c1a41ae172b488a3",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 8",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1080,
+        "wires": [
+            [
+                "f9c97b12b2643f8b"
+            ]
+        ]
+    },
+    {
+        "id": "fd41e0a0ba2fc17e",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 9",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1520,
+        "wires": [
+            [
+                "cb1833a3c84cf668"
+            ]
+        ]
+    },
+    {
+        "id": "6a5bb4b630754a46",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 1460,
+        "wires": [
+            [
+                "df3c4ac9eb135276"
+            ]
+        ]
+    },
+    {
+        "id": "e0578e67d384df84",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 1520,
+        "wires": [
+            [
+                "fd41e0a0ba2fc17e"
+            ]
+        ]
+    },
+    {
+        "id": "df3c4ac9eb135276",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 10",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1460,
+        "wires": [
+            [
+                "cb1833a3c84cf668"
+            ]
+        ]
+    },
+    {
+        "id": "caccdec14db55cc1",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 11",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1700,
+        "wires": [
+            [
+                "2caa0121da6fb64e"
+            ]
+        ]
+    },
+    {
+        "id": "89c72f301f61e93e",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 1640,
+        "wires": [
+            [
+                "d767c0cdee09c8fc"
+            ]
+        ]
+    },
+    {
+        "id": "53378bded4d1b553",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 1700,
+        "wires": [
+            [
+                "caccdec14db55cc1"
+            ]
+        ]
+    },
+    {
+        "id": "d767c0cdee09c8fc",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 12",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1640,
+        "wires": [
+            [
+                "2caa0121da6fb64e"
+            ]
+        ]
+    },
+    {
+        "id": "29a2ce17168e34b7",
+        "type": "ui_text",
+        "z": "eb96b86d53777532",
+        "group": "1a49bdd6464a717b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Đang chữa cháy không",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 790,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "bac6923ee029d659",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 13",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 2280,
+        "wires": [
+            [
+                "29a2ce17168e34b7"
+            ]
+        ]
+    },
+    {
+        "id": "a6499b921058d17d",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 2220,
+        "wires": [
+            [
+                "a1e8746d740f0154"
+            ]
+        ]
+    },
+    {
+        "id": "4463162c0bb0e96d",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 2280,
+        "wires": [
+            [
+                "bac6923ee029d659"
+            ]
+        ]
+    },
+    {
+        "id": "a1e8746d740f0154",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 14",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 2220,
+        "wires": [
+            [
+                "29a2ce17168e34b7"
+            ]
+        ]
+    },
+    {
+        "id": "af5efc6186c09c89",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 15",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "09bcd0b852a98dd2"
+            ]
+        ]
+    },
+    {
+        "id": "815840ea4dc59d80",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "244230d5c8974608"
+            ]
+        ]
+    },
+    {
+        "id": "d6c82378d9188b4b",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 560,
+        "wires": [
+            [
+                "af5efc6186c09c89"
+            ]
+        ]
+    },
+    {
+        "id": "244230d5c8974608",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 16",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "09bcd0b852a98dd2"
+            ]
+        ]
+    },
+    {
+        "id": "18bfb61fafbd5b2b",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 17",
+        "func": "msg.payload = \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 2500,
+        "wires": [
+            [
+                "998b083223eb4f50"
+            ]
+        ]
+    },
+    {
+        "id": "0d048abb8ead1ccc",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 2440,
+        "wires": [
+            [
+                "286b5888d08b082c"
+            ]
+        ]
+    },
+    {
+        "id": "aa003e7ec80aae3b",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 2500,
+        "wires": [
+            [
+                "18bfb61fafbd5b2b"
+            ]
+        ]
+    },
+    {
+        "id": "286b5888d08b082c",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 18",
+        "func": "msg.payload = \"ON\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 2440,
+        "wires": [
+            [
+                "998b083223eb4f50"
+            ]
+        ]
+    },
+    {
+        "id": "5dd269d5b9b18e0e",
+        "type": "e-mail",
+        "z": "eb96b86d53777532",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Có cháy",
+        "x": 800,
+        "y": 1980,
+        "wires": [],
+        "info": "Đăng nhập tài khoản google vào trang web https://myaccount.google.com/apppasswords\r\nĐặt tên app là Node-RED, sẽ nhận được một mật khẩu, có thể thay đổi\r\nTrong properties của node này:\r\n- To: địa chỉ email người nhận.\r\n- userid: địa chỉ email sử dụng để tạo apppassword (email của người gửi).\r\n- password: mật khẩu được google app passwords cấp."
+    },
+    {
+        "id": "4c10e4c2238a2b26",
+        "type": "rbe",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 470,
+        "y": 1980,
+        "wires": [
+            [
+                "80b9295f08ae8971"
+            ]
+        ]
+    },
+    {
+        "id": "39e7adadc8d4587e",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 19",
+        "func": "var d = new Date(msg.payload);\n\nvar hh = String(d.getHours()).padStart(2, '0');\nvar mm = String(d.getMinutes()).padStart(2, '0');\n\n// dùng context để lưu (giờ nhận từ topic1, phút nhận từ topic2)\nvar hour = context.get(\"hour\") || null;\nvar minute = context.get(\"minute\") || null;\n\n// phân biệt topic\nif (msg.topic === \"topic1\") {\n    hour = msg.payload;          // payload từ topic1 chứa GIỜ\n    context.set(\"hour\", hour);\n}\n\nelse if (msg.topic === \"topic2\") {\n    minute = msg.payload;        // payload từ topic2 chứa PHÚT\n    context.set(\"minute\", minute);\n}\n\n// so sánh giờ & phút\nif (hour == hh && minute == mm) {\n    msg.payload = 1;\n} else {\n    msg.payload = null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1200,
+        "wires": [
+            [
+                "bd31660d49a3e58e"
+            ]
+        ]
+    },
+    {
+        "id": "0f858d98e081e913",
+        "type": "ui_toast",
+        "z": "eb96b86d53777532",
+        "position": "top right",
+        "displayTime": "1",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Đến giờ cho ăn uống",
+        "name": "Đến giờ cho ăn uống",
+        "x": 860,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "bd31660d49a3e58e",
+        "type": "switch",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 1200,
+        "wires": [
+            [
+                "0f858d98e081e913",
+                "9e0c624976368c7c"
+            ]
+        ]
+    },
+    {
+        "id": "9e0c624976368c7c",
+        "type": "rbe",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 630,
+        "y": 1260,
+        "wires": [
+            [
+                "b9dabe0318e27dca"
+            ]
+        ]
+    },
+    {
+        "id": "c3987b4fb7312bb9",
+        "type": "e-mail",
+        "z": "eb96b86d53777532",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Đến giờ cho ăn uống",
+        "x": 980,
+        "y": 1260,
+        "wires": [],
+        "info": "Đăng nhập tài khoản google vào trang web https://myaccount.google.com/apppasswords\r\nĐặt tên app là Node-RED, sẽ nhận được một mật khẩu, có thể thay đổi\r\nTrong properties của node này:\r\n- To: địa chỉ email người nhận.\r\n- userid: địa chỉ email sử dụng để tạo apppassword (email của người gửi).\r\n- password: mật khẩu được google app passwords cấp."
+    },
+    {
+        "id": "b9dabe0318e27dca",
+        "type": "change",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Đến giờ cho ăn uống",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1260,
+        "wires": [
+            [
+                "c3987b4fb7312bb9"
+            ]
+        ]
+    },
+    {
+        "id": "80b9295f08ae8971",
+        "type": "change",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Cháy rồi",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1980,
+        "wires": [
+            [
+                "5dd269d5b9b18e0e"
+            ]
+        ]
+    },
+    {
+        "id": "4e9c95829868a696",
+        "type": "inject",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 1200,
+        "wires": [
+            [
+                "39e7adadc8d4587e"
+            ]
+        ]
+    },
+    {
+        "id": "8844ac5b1311cda1",
+        "type": "ui_numeric",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Phút",
+        "tooltip": "",
+        "group": "e849f340ec94a486",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": true,
+        "passthru": true,
+        "topic": "topic2",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "59",
+        "step": 1,
+        "className": "",
+        "x": 190,
+        "y": 1280,
+        "wires": [
+            [
+                "39e7adadc8d4587e"
+            ]
+        ]
+    },
+    {
+        "id": "2bfcf4951f2e2e4f",
+        "type": "ui_numeric",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "label": "Giờ",
+        "tooltip": "",
+        "group": "e849f340ec94a486",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": true,
+        "passthru": true,
+        "topic": "topic1",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": "-1",
+        "max": "23",
+        "step": 1,
+        "className": "",
+        "x": 190,
+        "y": 1240,
+        "wires": [
+            [
+                "39e7adadc8d4587e"
+            ]
+        ]
+    },
+    {
+        "id": "ece9c16e2b09ef03",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Điều khiển và kiểm tra đèn sáng có bật không",
+        "info": "",
+        "x": 290,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "0c4748096a2e93c9",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Kiểm tra nhiệt độ",
+        "info": "",
+        "x": 200,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0ea56da53b3e383a",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Điều khiển và kiểm tra chế độ tự động điều chỉnh nhiệt độ",
+        "info": "",
+        "x": 330,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1344153fc62eef6b",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Điểu khiển và kiểm tra của quạt và máy sưởi (chế độ thủ công)",
+        "info": "",
+        "x": 340,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "3fb427351b13c658",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Hẹn giờ cho ăn uống, nhận thông báo qua web và email",
+        "info": "",
+        "x": 340,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "6ee50a714e75b5f7",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Điểu khiển và kiểm tra băng chuyền cho ăn và máy bơm nước uống (chế độ thủ công)",
+        "info": "",
+        "x": 440,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "b2e0ab5adff4599f",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Kiểm tra có cháy không, nếu có sẽ gửi thông báo qua web và email",
+        "info": "",
+        "x": 380,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "32644564ee564b41",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Điều khiển và kiểm tra máy bơm chữa cháy (chế độ thủ công)",
+        "info": "",
+        "x": 360,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "c113a0f8f068d362",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Bật tắt và kiểm tra chế độ chữa cháy tự động",
+        "info": "",
+        "x": 310,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "afc97bcc89d25d10",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/autofan",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 640,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "930e5c66634f4e53",
+        "type": "change",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 800,
+        "wires": [
+            [
+                "afc97bcc89d25d10"
+            ]
+        ]
+    },
+    {
+        "id": "bf9799e915b455e2",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Khi người dùng muốn tự điều khiển quạt, chế độ tự động sẽ tắt",
+        "info": "",
+        "x": 970,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "e8d31beae0104188",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/autofan",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 640,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "fdb774719f21877a",
+        "type": "change",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 980,
+        "wires": [
+            [
+                "e8d31beae0104188"
+            ]
+        ]
+    },
+    {
+        "id": "a6ba28f3b78a6460",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Khi người dùng muốn tự điều khiển máy sưởi, chế độ tự động sẽ tắt",
+        "info": "",
+        "x": 980,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "91e6fa5429c57782",
+        "type": "mqtt out",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "esp32/autofire",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 660,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "09e35bc8cb4c31f2",
+        "type": "change",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 2140,
+        "wires": [
+            [
+                "91e6fa5429c57782"
+            ]
+        ]
+    },
+    {
+        "id": "5eee6404019e50e6",
+        "type": "comment",
+        "z": "eb96b86d53777532",
+        "name": "Khi người dùng muốn tự chữa cháy, chế độ tự động sẽ tắt",
+        "info": "",
+        "x": 970,
+        "y": 2140,
+        "wires": []
+    }
+]
