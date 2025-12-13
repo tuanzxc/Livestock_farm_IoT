@@ -95,8 +95,6 @@ B4: Deploy
 
 Youtube: [Link](https://youtu.be/gljpb4TCUY8?si=1LuEsQNhKYvjf9dE)
 
-Google drive: [Link](https://drive.google.com/file/d/1I3LE9Mj58j8BERSbEoG4K8dJx891p0RY/view?usp=sharing)
-
 ## Kết quả
 
 Hệ thống chạy ổn định, các thiết bị hoạt động tương đối tốt, đáng tin cậy, đặc biệt là việc bật tắt, báo cháy, 2 chế độ tự động tự chỉnh nhiệt độ và chữa cháy.
